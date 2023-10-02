@@ -1,0 +1,300 @@
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Lexend:100,200,300,regular,500,600,700,800,900);
+
+body{
+    background: #e4e4e4;
+}
+
+.welcome-header{
+    text-align: center;
+    flex-direction: column; /* Stack elements vertically */
+    margin-top: 2vw;
+}
+
+.welcome-header p{
+    color: #0CAE0E;
+    font-family: Lexend;
+    font-size: calc(12px + 1vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 8vw 0 0 0;
+}
+
+.welcome-header h1{
+    color: #004C01;
+    font-family: Lexend;
+    font-size: calc(30px + 1vw);
+}
+
+.welcome-header h5{
+    color: #777575;
+    text-align: center;
+    font-family: Lexend;
+    font-size: calc(5px + 1vw);
+    font-weight: 300;
+}
+
+/*Input*/
+.input1{
+    text-align  : center;
+    margin-top: 5vw;
+}
+
+.input1 img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 40vw;
+    height: 100%;
+    margin-left: 1vw;
+    border-radius: 25px;
+    box-shadow: -20px -20px 40px 0px rgba(255, 255, 255, 0.90), 20px 20px 40px 0px rgba(190, 190, 190, 0.90);
+}
+
+.sub-section{
+    display: inline-block;
+    vertical-align: middle; 
+    padding-left: 10vw;
+    padding-bottom: 3vw;
+}
+
+.sub-section h1{
+    color: #004C01;
+    font-family: Lexend;
+    text-align: justify;
+    font-size: calc(25px + 1vw);
+    width: 400px;
+}
+.sub-section p{
+    color: #777575;
+    text-align: justify;
+    font-family: Lexend;
+    font-size: calc(5px + 1vw);
+    width: 400px;
+}
+
+.input2{
+    text-align  : center;
+    margin-top: 10vw;
+}
+
+.input2 img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 40vw;
+    height: 100%;
+    margin-left: 10vw;
+    border-radius: 25px;
+    box-shadow: -20px -20px 40px 0px rgba(255, 255, 255, 0.90), 20px 20px 40px 0px rgba(190, 190, 190, 0.90);
+}
+
+.sub-section-two{
+    display: inline-block;
+    vertical-align: middle; 
+    padding-left: 1vw;
+    padding-bottom: 3vw;
+}
+
+.sub-section-two h1{
+    color: #004C01;
+    font-family: Lexend;
+    text-align: justify;
+    font-size: calc(25px + 1vw);
+    width: 400px;
+}
+.sub-section-two p{
+    color: #777575;
+    text-align: justify;
+    font-family: Lexend;
+    font-size: calc(5px + 1vw);
+    width: 400px;
+}
+
+
+/**/
+.btnLM, .btnLM2{
+    padding: 8px;
+    border-radius: 50px;
+    background: radial-gradient(1701.49% 154.67% at 7.25% 15.28%, #148315 0%, #FEF102 100%, #E4E44F 100%);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+    font: 20px 'DM Sans';
+    width: 13vw;
+}
+
+.btnLM a, .btnLM2 a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.btnLM:hover, .btnLM2:hover{
+    filter: drop-shadow(-10px -10px 20px rgba(253, 255, 157, 0.534)) drop-shadow(10px 10px 20px rgba(253, 255, 157, 0.534));
+}
+.btnLM a:hover,.btnLM2 a:hover{
+    color: #FEF102;
+}
+
+/*media*/
+@media screen and (max-width: 1000px) {
+    .input1 {
+        margin-top: 5vw;
+        text-align  : center;
+    }
+    .input1 img{  
+        display: inline-block;
+        vertical-align: middle;
+        width: 40vw;
+        height: 100%;
+        border-radius: 25px;
+        box-shadow: -20px -20px 40px 0px rgba(255, 255, 255, 0.90), 20px 20px 40px 0px rgba(190, 190, 190, 0.90);
+    }
+    .sub-section{
+        display: inline-block;
+        vertical-align: middle; 
+        padding-bottom: 3vw;
+    }
+    .sub-section h1{
+        color: #004C01;
+        font-family: Lexend;
+        text-align: justify;
+        font-size: calc(15px + 1vw);
+        width: 300px;
+    }
+    .sub-section p{
+        color: #777575;
+        text-align: justify;
+        font-family: Lexend;
+        font-size: calc(5px + 1vw);
+        width: 300px;
+    }
+    
+    .input2 img{
+        display: inline-block;
+        vertical-align: middle;
+        width: 40vw;
+        height: 100%;
+        margin-left: 10vw;
+        border-radius: 25px;
+        box-shadow: -20px -20px 40px 0px rgba(255, 255, 255, 0.90), 20px 20px 40px 0px rgba(190, 190, 190, 0.90);
+    }
+    
+    .sub-section-two h1{
+        color: #004C01;
+        font-family: Lexend;
+        text-align: justify;
+        font-size: calc(15px + 1vw);
+        width: 300px;
+    }
+    .sub-section-two p{
+        color: #777575;
+        text-align: justify;
+        font-family: Lexend;
+        font-size: calc(5px + 1vw);
+        width: 300px;
+    }
+
+    .btnLM, .btnLM2{
+        font: 12px 'DM Sans';
+        width: 13vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .input1 {
+        margin-top: 5vw;
+        text-align  : center;
+    }
+    .sub-section{
+        display: inline-block;
+        vertical-align: middle; 
+        padding-bottom: 3vw;
+    }
+    .sub-section h1{
+        font-size: calc(10px + 1vw);
+        width: 200px;
+    }
+    .sub-section p{
+        font-size: calc(4px + 1vw);
+        width: 200px;
+    }
+    
+    .sub-section-two h1{
+        font-size: calc(10px + 1vw);
+        width: 200px;
+    }
+    .sub-section-two p{
+        font-size: calc(4px + 1vw);
+        width: 200px;
+    }
+
+    .btnLM, .btnLM2{
+        font: 8px 'DM Sans';
+        width: 13vw;
+    }
+
+    .welcome-header h1{
+        font-size: calc(20px + 1vw);
+        margin-top: -1.5vw;
+    }
+}
+
+@media screen and (max-width: px) {
+    .input1{
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5vw;
+    }
+    .input1 img{
+        display: block;
+        margin: 0 auto; /* Center the image horizontally */
+        width: 70vw; /* Ensure the image doesn't exceed its container width */
+        height: auto;
+        margin-bottom: 5vw;
+   }
+   .sub-section{
+        display: block;
+        width: auto;
+   }
+   .sub-section h1{
+        width: fit-content;
+        font-size: calc(12px + 1vw);
+        padding-right: 10vw;
+   }
+   .sub-section p{
+        width: fit-content;
+        padding-right: 10vw;
+        font-size: calc(8px + 1vw);
+   }
+
+   .input2 img{
+        display: block;
+        margin: 0 auto; /* Center the image horizontally */
+        width: 70vw; /* Ensure the image doesn't exceed its container width */
+        height: auto;
+        margin-bottom: 5vw;
+   }
+   .sub-section-two{
+        display: block;
+        width: auto;
+        margin-bottom: 5vw;
+   }
+   .sub-section-two h1{
+        width: fit-content;
+        font-size: calc(12px + 1vw);
+        padding-left: 10vw;
+        padding-right: 10vw;
+   }
+   .sub-section-two p{
+        width: fit-content;
+        padding-left: 10vw;
+        font-size: calc(8px + 1vw);
+        padding-right: 10vw;
+   }
+   .btnLM2{
+        margin-left: 10vw;
+   }
+   .welcome-header h1{
+    font-size: calc(15px + 1vw);
+    margin-top: -1.5vw;
+}
+}
+

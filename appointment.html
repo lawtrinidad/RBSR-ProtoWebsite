@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBSR | Schedule and Appointment</title>
+    <link rel="stylesheet" href="style-SAP.css">
+</head>
+<body>
+    <div class="container">
+        <div class="caption">
+            <h1>Book Your Appointment Now and Save Your Time</h1>
+            <p>RBSR operates <b>Monday to Friday, 9 am - 4 pm</b>. We're here to help with your banking needs!</p>
+        </div>
+
+        <div class="form-container">
+            <h1>Schedule and Appointment</h1>
+            <form id="appointment-form">
+                <input type="text" name="name" id="name" placeholder="Enter Your Full Name" required>
+                <input type="tel" name="phone" id="phone" placeholder="Enter Your Mobile Number" required>
+                <input type="text" name="email" id="email" placeholder="Enter Your Email Address" >
+                <input type="date" name="date" id="date" placeholder="Appointment Date" required>
+                <textarea id="message" name="message" placeholder="Appointment For..." name="message" rows="4" required></textarea>
+                <button type="submit" class="submit-btn">Schedule</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script-SAP.js"></script>
+</body>
+</html>

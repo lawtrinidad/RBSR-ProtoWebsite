@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Lexend:100,200,300,regular,500,600,700,800,900);
+
+body
+{
+    background: #e4e4e4;
+    margin: 0px;
+    padding: 0;
+}
+
+header
+{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background: #004c01;
+    padding: 2vw 5vw 2vw 5vw;
+    color: white
+}
+h1
+{
+    font: 600 40px 'Lexend';
+    margin-bottom: 0px
+}
+h2
+{
+    font: 200 28px 'DM Sans'
+}
+#subject-box
+{
+    height: auto;
+    width: 400px;
+    padding: 4px;
+    margin: 8px 0 8px 0;
+    border: 1px solid gray;
+    background: whitesmoke;
+    border-radius: 8px;
+    font: 300 16px 'Lexend';
+    color: gray;
+}
+#message-box
+{
+    height: 100px;
+    width: 400px;
+    padding: 4px;
+    margin: 8px 0 8px 0;
+    border: 1px solid gray;
+    background: whitesmoke;
+    border-radius: 8px;
+    font: 300 16px 'Lexend';
+    color:black;
+    line-height: 1;
+}
+#message-box::placeholder
+{
+    position: absolute;
+    font: 300 16px 'Lexend';
+    color: gray;
+    top: 0;
+}
+#contact-caption
+{
+    font: 300 16px 'Lexend';
+    color: white;
+    margin: 8px 0 8px 0;
+}
+#email
+{
+    height: auto;
+    width: 400px;
+    padding: 4px;
+    margin: 8px 0 8px 0;
+    border: 1px solid gray;
+    background: whitesmoke;
+    border-radius: 8px;
+    font: 300 16px 'Lexend';
+    color: gray;
+}
+#send-help
+{
+    height: auto;
+    width: 128px;
+    padding: 8px;
+    margin: 8px 0 8px 0;
+    border-radius: 8px;
+    border: none;
+    background-color: green;
+    text-transform: uppercase;
+    font: 300 12px 'Lexend';
+    color: white;
+}
+#send-help:hover
+{
+    filter: drop-shadow(0px 0px 5px rgba(251, 255, 0, 0.719));
+}

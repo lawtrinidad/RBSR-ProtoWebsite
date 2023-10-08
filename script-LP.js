@@ -59,3 +59,19 @@ class SlideShow {
 }
 
 new SlideShow();
+
+/** NEW*/
+const openFormLink = document.getElementById('openFormLink');
+const popupForm = document.querySelector('.container');
+const closeFormBtn = document.querySelector('.close-btn');
+
+openFormLink.addEventListener('click', () => {
+    popupForm.classList.add('sticky');
+    popupForm.style.display = 'block';
+});
+    
+closeFormBtn.addEventListener('click', () => {
+    popupForm.classList.remove('sticky');
+    popupForm.style.display = 'none';
+});
+

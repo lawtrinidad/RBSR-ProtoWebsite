@@ -52,22 +52,39 @@ body {
 }
 
 .form-container {
+    display: none;
     background-color: #f4f4f4;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    max-width: 30vw;
+    max-width: 33vw;
     margin: 0;
 }
-
-.form-container h1{
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.form-header h1 {
     font: 600 20px 'Lexend';
     margin: 0 0 10px;
 }
+
+#back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font: 14px 'DM Sans';
+    color: #004c01;
+    margin: 0 0 10px; 
+}
+
+
 #appointment-form input[type="text"],
 #appointment-form input[type="tel"],
-#appointment-form input[type="email"],
-#appointment-form input[type="date"]{
+#appointment-form input[type="email"]{
 
     width: 100%;
     padding: 10px;
@@ -102,6 +119,117 @@ body {
 #appointment-form button[type="submit"]:hover {
     background-color: #002f01;
 }
+
+/*CALENDAR*/
+.wrapper{
+    width: 450px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  }
+  .wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+  }
+  header .icons{
+    display: flex;
+  }
+  header .icons span{
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+  }
+  .icons span:last-child{
+    margin-right: -10px;
+  }
+  header .icons span:hover{
+    background: #f2f2f2;
+  }
+  header .current-date{
+    font: 500 1.45rem 'Lexend';
+  }
+  .calendar{
+    padding: 20px;
+  }
+  .calendar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+  }
+  .calendar .days{
+    margin-bottom: 20px;
+  }
+  .calendar li{
+    color: #333;
+    width: calc(100% / 7);
+    font: 300 1.07rem 'Lexend';
+  }
+  .calendar .weeks li{
+    font: 500 1.07rem 'Lexend';
+    cursor: default;
+  }
+  .calendar .days li{
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+  }
+  .days li.inactive{
+    color: #aaa;
+  }
+  .days li.active{
+    color: #fff;
+  }
+  .days li::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .days li.active::before{
+    background: #004c01;
+  }
+  .days li:not(.active):hover::before{
+    background: #f2f2f2;
+  }
+  
+  .bottom-button {
+    padding-left: 250px; 
+  }
+  
+  #btn{
+    background: radial-gradient(1701.49% 154.67% at 7.25% 15.28%, #148315 0%, #FEF102 100%, #E4E44F 100%);
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font: 14px 'DM Sans';
+  }
+  #btn:hover{
+    background: #004c01;
+  }
+  .days li.clicked { 
+    color: #FEF102;    
+    font-weight: 800;
+  }
+
 
 @media screen and (max-width: 600px) {
     body {

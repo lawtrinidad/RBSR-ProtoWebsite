@@ -26,37 +26,25 @@ h2
 {
     font: 200 28px 'DM Sans'
 }
-#subject-box
-{
-    height: auto;
-    width: 400px;
-    padding: 4px;
-    margin: 8px 0 8px 0;
-    border: 1px solid gray;
-    background: whitesmoke;
-    border-radius: 8px;
-    font: 300 16px 'Lexend';
-    color: gray;
-}
 #message-box
 {
     height: 100px;
     width: 400px;
-    padding: 4px;
+    padding: 4px 4px 4px 4px;
     margin: 8px 0 8px 0;
     border: 1px solid gray;
     background: whitesmoke;
     border-radius: 8px;
     font: 300 16px 'Lexend';
-    color:black;
+    color:rgb(26, 26, 26);
     line-height: 1;
+    overflow-y: clip;
+    resize: none;
 }
 #message-box::placeholder
 {
-    position: absolute;
     font: 300 16px 'Lexend';
     color: gray;
-    top: 0;
 }
 #contact-caption
 {
@@ -73,6 +61,11 @@ h2
     border: 1px solid gray;
     background: whitesmoke;
     border-radius: 8px;
+    font: 300 16px 'Lexend';
+    color: rgb(26, 26, 26);
+}
+#email::placeholder
+{
     font: 300 16px 'Lexend';
     color: gray;
 }
@@ -92,4 +85,60 @@ h2
 #send-help:hover
 {
     filter: drop-shadow(0px 0px 5px rgba(251, 255, 0, 0.719));
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    padding: 4vh 5vw 4vh 5vw;
+    color: #004c01;
+}
+ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+.faq-container 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 2em;
+}
+details
+{
+    font: 300 1rem 'DM Sans';
+    margin: 0 auto;
+    padding: 1em;
+    width: 90%;
+    background: white;
+    border: 1px solid #004c01;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+details:hover
+{
+    border: 1px solid yellow;
+}
+summary
+{
+    user-select: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+.faq-title
+{
+    width: 90%;
+    opacity: 0.75;
+}
+.faq-title:hover{
+    opacity: 1;
+}
+.faq-content
+{
+    color: black;
+    padding: 1em;
+    line-height: 1.5;
 }

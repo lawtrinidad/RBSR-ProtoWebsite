@@ -14,13 +14,14 @@ header
     display: flex;
     flex-direction: column;
     background: #004c01;
-    padding: 2vw 5vw 2vw 5vw;
+    padding: 14vw 5vw 2vw 5vw;
     color: white
 }
 h1
 {
     font: 600 40px 'Lexend';
-    margin-bottom: 0px
+    margin-top: 24px;
+    margin-bottom: 0px;
 }
 h2
 {
@@ -29,7 +30,7 @@ h2
 #message-box
 {
     height: 100px;
-    width: 400px;
+    width: 750px;
     padding: 4px 4px 4px 4px;
     margin: 8px 0 8px 0;
     border: 1px solid gray;
@@ -40,6 +41,7 @@ h2
     line-height: 1;
     overflow-y: clip;
     resize: none;
+    transition: all 0.3s ease;
 }
 #message-box::placeholder
 {
@@ -104,14 +106,14 @@ ul
 {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 32px;
     margin-top: 2em;
 }
 details
 {
     font: 300 1rem 'DM Sans';
     margin: 0 auto;
-    padding: 1em;
+    padding: 1.5em;
     width: 90%;
     background: white;
     border: 1px solid #004c01;
@@ -128,6 +130,7 @@ summary
     cursor: pointer;
     font-weight: 500;
 }
+
 .faq-title
 {
     width: 90%;
@@ -141,4 +144,41 @@ summary
     color: black;
     padding: 1em;
     line-height: 1.5;
+}
+@media only screen and (max-width: 900px){
+    #message-box{
+        width: 400px;
+    }
+}
+
+footer
+{
+    position: relative;
+    display: grid;
+    flex-direction: column;
+    margin-top: 64px;
+    gap: 16px;
+    height: auto;
+    width: 100%;
+    padding: 4vw 0 4vw 0;
+    background-color: #1d771e;
+}
+footer b
+{
+    margin-left: 4vw;
+    font: 400 16px 'DM Sans';
+    color: white;
+}
+footer li 
+{
+    display: flex;
+    gap: 0 2vw;
+    font: 700 16px 'DM Sans';
+    border-top: 0.5px solid yellow;
+    padding: 20px 0 0 4vw;
+}
+footer li a
+{
+    text-decoration: none;
+    color: white;
 }

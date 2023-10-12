@@ -1,39 +1,3 @@
-class AccordionNav {
-    constructor() {
-        document.addEventListener('DOMContentLoaded', () => {
-            // Get references to the button and the elements with the specified classes
-            var button = document.getElementById('expandNav');
-            var header = document.querySelector('header');
-            var navMenu = document.querySelector('.nav-menu');
-            var logo = document.querySelector('.logo');
-            var navList = document.querySelector('.navList');
-            var loginButton = document.querySelector('.loginButton');
-            const isaccordionOpen = false;
-            
-            // Add a click event listener to the button
-            button.addEventListener('click', function() {
-                // Toggle the "expand" class on the elements
-                button.classList.toggle('expand');
-                header.classList.toggle('expand');
-                navMenu.classList.toggle('expand');
-                navList.classList.toggle('expand');
-                logo.classList.toggle('expand');
-                loginButton.classList.toggle('expand');
-
-                const windowWidth = window.innerWidth || document.documentElement.clientWidth;
-
-                if ((loginButton.classList.contains('expand')) && (windowWidth < 900)) {
-                    loginButton.style.display = 'block';
-                } else {
-                    loginButton.style.display = '';
-                }
-            });
-        });
-    }
-}
-
-// Create an instance of the AccordionNav class
-new AccordionNav();
 
 class SlideShow {
     constructor() {
@@ -59,19 +23,4 @@ class SlideShow {
 }
 
 new SlideShow();
-
-/** NEW*/
-const openFormLink = document.getElementById('openFormLink');
-const popupForm = document.querySelector('.container');
-const closeFormBtn = document.querySelector('.close-btn');
-
-openFormLink.addEventListener('click', () => {
-    popupForm.classList.add('sticky');
-    popupForm.style.display = 'block';
-});
-    
-closeFormBtn.addEventListener('click', () => {
-    popupForm.classList.remove('sticky');
-    popupForm.style.display = 'none';
-});
 

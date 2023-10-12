@@ -10,10 +10,10 @@
         <h1>Need Help?</h1>
         <h2>Send us your question:</h2>
         <div class="input-box">
-            <textarea id="message-box" type="text" placeholder="What's your concern?"></textarea>
+            <textarea id="message-box" type="text" placeholder="What's your concern?" required></textarea>
             <div>
                 <div id="contact-caption">How do we reach back to you?</div>
-                <textarea id="email" placeholder="Email Address"></textarea>
+                <textarea id="email" placeholder="Email Address" required></textarea>
             </div>
             <button id="send-help">Send query</button>
         </div>
@@ -22,56 +22,34 @@
         <h1 style="font-size: 28px;">Frequently Asked Questions (FAQs)</h1>
         <div>
             <ul id="faqs">
-                <div class="faq-container">
+                <div class="faq-container" id="sample-faq">
                     <details>
                         <summary>
                             <span class='faq-title'>
-                                How long does the course take? 
+                                Does your bank offer online banking services?
                             </span>
                         </summary>
                         <div class='faq-content'>
-                            The video content takes more than 4.5 hours.
-                        </div>
-                    </details>
-                </div>
-                <div class="faq-container">
-                    <details>
-                        <summary>
-                            <span class='faq-title'>
-                                How long does the course take? 
-                            </span>
-                        </summary>
-                        <div class='faq-content'>
-                            The video content takes more than 4.5 hours.
-                        </div>
-                    </details>
-                </div>
-                <div class="faq-container">
-                    <details>
-                        <summary>
-                            <span class='faq-title'>
-                                How long does the course take? 
-                            </span>
-                        </summary>
-                        <div class='faq-content'>
-                            The video content takes more than 4.5 hours.
-                        </div>
-                    </details>
-                </div>
-                <div class="faq-container">
-                    <details>
-                        <summary>
-                            <span class='faq-title'>
-                                How long does the course take? 
-                            </span>
-                        </summary>
-                        <div class='faq-content'>
-                            The video content takes more than 4.5 hours.
+                            Unfortunately, we do not currently provide online banking services at this time. You can visit our physical branch for all your banking needs.
                         </div>
                     </details>
                 </div>
             </ul>
         </div>
     </main>
+    <footer>
+        <div>
+            <b>©2023 Rural Bank of San Rafael Bulacan Inc.</b>
+        </div>
+        <div class="footerNav">
+            <li>
+                <a href="/landingpage.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/help.html">Support</a>
+            </li>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script-HS.js"></script>
 </body>
 </html>

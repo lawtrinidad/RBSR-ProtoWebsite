@@ -2,44 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RBSR | Branches</title>
+  <meta name="viewport" content="width=device-width, initial-scale  =1.0">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
   <link href="style-BP.css" rel="stylesheet" type="text/css" />
+  <title>RBSR | Branches</title>
 </head>
 <body>
-<div class="footer">
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-inner-header">
-        <p class="highlighted-text">Rural Bank of San Rafael (Head Office)</p>
-      </div>
-      <div class="row">
-        <div class="col-md-8">
-          <div class="map">
-            <iframe 
-            src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3853.355307758677!2d120.93201607424193!3d15.028451166460313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33970186bfe6bf43%3A0x8b988e554d4a2991!2sRural%20Bank%20of%20San%20Rafael%20(Head%20Office)!5e0!3m2!1sen!2sph!4v1697031942254!5m2!1sen!2sph"
-            width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen>
-          </iframe>
-          </div>
+  <div class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-inner-header" id="title-header">
+          <p class="highlighted-text" >Rural Bank of San Rafael (Head Office)</p>
         </div>
-        <div class="col-md-4">
-          <div class="contact-text">
-          <h1>Contact Us</h1>
-            <h2><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; Address</h2>
-            <p>&nbsp; RBSR Building, 172 Pan-Philippine Hwy, San Rafael, 3008 Bulacan</p>
-            <h2><i class="fa fa-phone-square" aria-hidden="true"></i> &nbsp; Contact Us</h2>
-            <P>&nbsp; 0932 848 6876</P>
-            <h2><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp; E-Mail</h2>
-            <P> &nbsp; rbsanrafael@yahoo.com</P>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="map">
+              <iframe id="myIframe"
+              src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3853.355307758677!2d120.93201607424193!3d15.028451166460313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33970186bfe6bf43%3A0x8b988e554d4a2991!2sRural%20Bank%20of%20San%20Rafael%20(Head%20Office)!5e0!3m2!1sen!2sph!4v1697031942254!5m2!1sen!2sph"
+              width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-text">
+              <h1>Contact Us</h1>
+              <h2><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; Address</h2>
+              <p>&nbsp; RBSR Building, 172 Pan-Philippine Hwy, San Rafael, 3008 Bulacan</p>
+              <h2><i class="fa fa-phone-square" aria-hidden="true"></i> &nbsp; Contact Us</h2>
+              <P>&nbsp; 0932 848 6876 / (044) 617-8719</P>
+              <h2><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp; E-Mail</h2>
+              <P> &nbsp; rbsanrafael@yahoo.com</P>
+              <div class="branches-container">
+                <div class="branch-si" id="openSIbranch">
+                  <h3><i class="fa fa-map-o" aria-hidden="true"></i></h3>
+                </div>
+                <div class="branch-sr" id="openSRbranch">
+                  <h3><i class="fa fa-map-o" aria-hidden="true"></i></h3>
+                </div>
+                <div class="branch-bal" id="openBALbranch">
+                  <h3><i class="fa fa-map-o" aria-hidden="true"></i></h3>
+                </div>
+              </div>
+              <div class="branches-captions">
+                <h5>San Ildefonso</h5>
+                <h5>San Rafael</h5>
+                <h5>Baliwag</h5>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<script src="script-BP.js"></script>
+  <script src="script-BP.js"></script>
 </body>
 </html>

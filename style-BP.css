@@ -153,12 +153,12 @@
 }
 
 @media only screen and (min-width:360px) and (max-width:479px) {
-	.footer {
+	.footer{
 		height: auto;
 	}
 	
 	.map iframe {
-		height: 200px;
+		height: 150px;
 	}
 	.contact-text {
 		padding: 15px;
